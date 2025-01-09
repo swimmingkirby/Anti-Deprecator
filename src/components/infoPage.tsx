@@ -118,7 +118,7 @@ const InfoPage = () => {
 
                 <div style={{textAlign: 'center'}}>
                     <p style={{margin: 0}}>
-                        For more details, visit our <a href="#" style={{color: '#61dafb'}}>GitHub Repository</a>.
+                        For more details, visit the <a href="https://github.com/swimmingkirby/Anti-Deprecator" style={{color: '#61dafb'}}>GitHub Repository</a>.
                     </p>
                 </div>
 
