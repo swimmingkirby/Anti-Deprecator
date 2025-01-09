@@ -1,46 +1,51 @@
-# Getting Started with Create React App
+# Anti-Deprecator
+**"Companion for Tackling Deprecated Code"**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Try me!](https://img.shields.io/badge/Try%20It-Online-blue?style=for-the-badge)](https://antidep.hamzawahbi.com)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## What is Anti-Deprecator?
+Anti-Deprecator is a developer tool that identifies and replaces deprecated code in JavaScript projects, with a special focus on Dynamics 365 JS webresources. Built with React, it provides:
 
-### `npm start`
+- Syntax highlighting
+- Replacement suggestions
+- Configurable settings 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+All to help you keep your code modern and up-to-date.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## Get Started Now 
+1. **Go to the 'Data' Tab:** Load dummy data for demonstration (if needed).
+2. **Navigate to the 'Editor' Tab:** Input your JavaScript code in the editor. 
+3. **Press <kbd>Ctrl + D</kbd>:** Quickly load a sample script containing deprecated functions.  
+4. **Click 'Submit':** Process your input code to identify any deprecated items.  
+5. **Hover Over Highlights:** Access detailed info and apply fixes directly from the tooltip.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Key Features
+- **Dynamic Code Parsing:** Highlights deprecated elements with precise recommendations.  
+- **Interactive Tooltip:** Quickly view details and recommendations by hovering.  
+- **Data Management:** Add, remove, or modify deprecated items on the fly.  
+- **Real-Time Editor:** Seamless integration with CodeMirror for code editing and visualization.  
+- **Persistent Storage:** Save custom data to `localStorage` for future sessions.  
+- **Configurability:** Tailor the tool’s deprecation data to your specific project needs.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## How to Use
+1. **Navigate to the 'Editor' Tab:** Input (or paste) your JavaScript code.  
+2. **Click 'Submit':** Process your code to spot deprecated items.  
+3. **Hover Over Highlights:** View detailed info and apply fixes from the tooltip.  
+4. **Manage Data:** Go to the 'Data' tab to add or edit deprecated items.  
+5. **Explore Deprecated Items:** Use the 'Info' tab to see in-depth explanations of each feature.  
+6. **Save Changes:** Make sure your data is saved to `localStorage` for future use.  
+7. **Update Deprecated Data:** In the 'Data' tab, adjust the JSON data for deprecated elements.  
+8. **Use Replacement Suggestions:** One-click auto-corrections for your code in the editor.  
+9. **Review Outputs:** Check the processed code in the OutputBox to confirm corrections.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Built with React**
