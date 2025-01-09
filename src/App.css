@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+.App {
+    background-color: #1c2129;
+    min-height: 100vh;
+}
+
+.App-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    max-width: 100vw;
+    justify-content: start;
+}
+
+.boxes > * {
+    flex: 1;
+    max-width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.myButton {
+    box-shadow: 0px 1px 3px 0px #272c35;
+    background: #272c35;
+    border-radius: 5px;
+    border: 1px solid #15181d;
+    display: block;
+    margin: 10px auto;
+    padding: 14px 40px;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.myButton:hover {
+    background: #464f5f;
+    position: relative;
+    bottom: 1px;
+}
+
+.myButton:active {
+    position: relative;
+    top: 2px;
+}
+
+.highlighted-text {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.cm-tooltip {
+    z-index: 100;
+    font-size: 14px;
+    color: #464f5f;
+}
+
+.cm-editor {
+    height: 100%;
+}
+
+.CodeMirror, .output-box {
+    scrollbar-width: thin;
+    scrollbar-color: #61dafb #3b4048;
+}
+
+.CodeMirror::-webkit-scrollbar, .output-box::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.CodeMirror::-webkit-scrollbar-track, .output-box::-webkit-scrollbar-track {
+    background: #3b4048;
+    border-radius: 4px;
+}
+
+.CodeMirror::-webkit-scrollbar-thumb, .output-box::-webkit-scrollbar-thumb {
+    background-color: #61dafb;
+    border-radius: 8px;
+    border: 2px solid #3b4048;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #61dafb #3b4048;
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #3b4048;
+    border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #61dafb;
+    border-radius: 8px;
+    border: 2px solid #3b4048;
+}

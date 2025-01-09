@@ -1,0 +1,209 @@
+{
+  "deprecatedItems": [
+    {
+      "code": "Xrm.Page",
+      "description": "Use of the Xrm.Page object as a static access to the primary form context is still supported to maintain backward compatibility.",
+      "recommendation": "Forms: ExecutionContext.getFormContext; Commands: Send it as the PrimaryControl parameter"
+    },
+    {
+      "code": "Xrm.Page.context",
+      "description": "Allows access to the global context without going through the form context.",
+      "recommendation": "Xrm.Utility.getGlobalContext"
+    },
+    {
+      "code": "Xrm.Page.context.getQueryStringParameters",
+      "description": "Retrieves non-entity-bound data in forms, dialogs, and task-based flows.",
+      "recommendation": "formContext.data.attributes"
+    },
+    {
+      "code": "Xrm.Page.context.getTimeZoneOffsetMinutes",
+      "description": "Moved to user settings for accessing time zone offsets.",
+      "recommendation": "globalContext.userSettings.getTimeZoneOffsetMinutes"
+    },
+    {
+      "code": "Xrm.Page.context.getUserId",
+      "description": "Access user ID from user settings.",
+      "recommendation": "globalContext.userSettings.userId"
+    },
+    {
+      "code": "Xrm.Page.context.getUserLcid",
+      "description": "Access user language ID from user settings.",
+      "recommendation": "globalContext.userSettings.languageId"
+    },
+    {
+      "code": "Xrm.Page.context.getUserName",
+      "description": "Access user name from user settings.",
+      "recommendation": "globalContext.userSettings.userName"
+    },
+    {
+      "code": "Xrm.Page.context.getUserRoles",
+      "description": "Access user roles from user settings.",
+      "recommendation": "globalContext.userSettings.securityRoles"
+    },
+    {
+      "code": "Xrm.Page.context.getIsAutoSaveEnabled",
+      "description": "Moved to organization settings for auto-save information.",
+      "recommendation": "globalContext.organizationSettings.isAutoSaveEnabled"
+    },
+    {
+      "code": "Xrm.Page.context.getOrgLcid",
+      "description": "Access organization language ID from organization settings.",
+      "recommendation": "globalContext.organizationSettings.languageId"
+    },
+    {
+      "code": "Xrm.Page.context.getOrgUniqueName",
+      "description": "Access organization unique name from organization settings.",
+      "recommendation": "globalContext.organizationSettings.uniqueName"
+    },
+    {
+      "code": "Xrm.Page.data.entity.getDataXml",
+      "description": "No change in the method; use typename instead of type for lookup attributes.",
+      "recommendation": "Use typename instead of type for lookup attributes"
+    },
+    {
+      "code": "GridRow.getData",
+      "description": "Unify GridRow interface with form context.",
+      "recommendation": "GridRow.data"
+    },
+    {
+      "code": "GridRowData.getEntity",
+      "description": "Unify GridRowData interface with form data.",
+      "recommendation": "GridRowData.entity"
+    },
+    {
+      "code": "Xrm.Mobile.offline",
+      "description": "Moved offline-related methods to WebApi.",
+      "recommendation": "Xrm.WebApi.offline"
+    },
+    {
+      "code": "parent.Xrm",
+      "description": "Access the Xrm object inside HTML web resources.",
+      "recommendation": "Use custom controls (Power Apps framework), getContentWindow method, or parent.Xrm/opener.Xrm."
+    },
+    {
+      "code": "addOnKeyPress",
+      "description": "Key press event handling deprecated.",
+      "recommendation": "Use a custom control created using Power Apps component framework."
+    },
+    {
+      "code": "fireOnKeyPress",
+      "description": "Key press event triggering deprecated.",
+      "recommendation": "Use a custom control created using Power Apps component framework."
+    },
+    {
+      "code": "removeOnKeyPress",
+      "description": "Key press event removal deprecated.",
+      "recommendation": "Use a custom control created using Power Apps component framework."
+    },
+    {
+      "code": "showAutoComplete",
+      "description": "Autocomplete feature deprecated.",
+      "recommendation": "Use a custom control created using Power Apps component framework."
+    },
+    {
+      "code": "hideAutoComplete",
+      "description": "Autocomplete feature hiding deprecated.",
+      "recommendation": "Use a custom control created using Power Apps component framework."
+    },
+    {
+      "code": "alertDialog",
+      "description": "Deprecated for navigation consistency.",
+      "recommendation": "Xrm.Navigation.openAlertDialog"
+    },
+    {
+      "code": "Xrm.Utility.confirmDialog",
+      "description": "Deprecated for navigation consistency.",
+      "recommendation": "Xrm.Navigation.openConfirmDialog"
+    },
+    {
+      "code": "Xrm.Utility.getBarcodeValue",
+      "description": "Device-related actions moved.",
+      "recommendation": "Xrm.Device.getBarcodeValue"
+    },
+    {
+      "code": "Xrm.Utility.getCurrentPosition",
+      "description": "Device-related actions moved.",
+      "recommendation": "Xrm.Device.getCurrentPosition"
+    },
+    {
+      "code": "Xrm.Utility.isActivityType",
+      "description": "Asynchronous alternative provided.",
+      "recommendation": "Xrm.Utility.getEntityMetadata"
+    },
+    {
+      "code": "Xrm.Utility.openEntityForm",
+      "description": "Navigation actions moved.",
+      "recommendation": "Xrm.Navigation.openForm"
+    },
+    {
+      "code": "Xrm.Utility.openQuickCreate",
+      "description": "Navigation actions moved.",
+      "recommendation": "Xrm.Navigation.openForm"
+    },
+    {
+      "code": "Xrm.Utility.openWebResource",
+      "description": "Navigation actions moved.",
+      "recommendation": "Xrm.Navigation.openWebResource"
+    },
+    {
+      "code": "globalContext.organizationSettings.baseCurrencyId",
+      "description": "Access display name and ID of transaction currency.",
+      "recommendation": "globalContext.organizationSettings.baseCurrency"
+    },
+    {
+      "code": "globalContext.userSettings.securityRoles",
+      "description": "Access display name and ID of security roles.",
+      "recommendation": "globalContext.userSettings.roles"
+    },
+    {
+      "code": "globalContext.userSettings.transactionCurrencyId",
+      "description": "Access display name and ID of transaction currency.",
+      "recommendation": "globalContext.userSettings.transactionCurrency"
+    },
+    {
+      "code": "getData and setData for Silverlight web resources",
+      "description": "Silverlight is no longer supported.",
+      "recommendation": ""
+    },
+    {
+      "code": "formContext.data.entity.save",
+      "description": "Save method deprecated in certain contexts.",
+      "recommendation": "formContext.data.save"
+    },
+    {
+      "code": "getObject",
+      "description": "Replaced for better API consistency.",
+      "recommendation": "getContentWindow"
+    },
+    {
+      "code": "Xrm.Page.getAttribute",
+      "description": "Deprecated access to attributes using Xrm.Page.",
+      "recommendation": "formContext.getAttribute"
+    },
+    {
+      "code": "Xrm.Page.getControl",
+      "description": "Deprecated access to controls using Xrm.Page.",
+      "recommendation": "formContext.getControl"
+    },
+    {
+      "code": "Xrm.Page.ui.getFormType",
+      "description": "Deprecated form type retrieval.",
+      "recommendation": "formContext.ui.formSelector.getCurrentItem"
+    },
+    {
+      "code": "Xrm.Page.ui.clearFormNotification",
+      "description": "Form notification clearing moved.",
+      "recommendation": "formContext.ui.clearFormNotification"
+    },
+    {
+      "code": "Xrm.Page.ui.setFormNotification",
+      "description": "Setting form notifications moved.",
+      "recommendation": "formContext.ui.setFormNotification"
+    },
+    {
+      "code": "Xrm.Page.ui.refreshRibbon",
+      "description": "Ribbon refresh moved.",
+      "recommendation": "formContext.ui.refreshRibbon"
+    }
+  ]
+}
